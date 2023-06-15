@@ -7,6 +7,7 @@ function getData() {
       result?.products?.map((item) => {
         $("#products").append(`<p>Name: ${item?.title}</p>`);
         $("#products").append(`<p>Price: ${item?.price} USD</p>`);
+        $("#products").append(`<p>Description: ${item?.description} USD</p>`);
       });
     });
 }
